@@ -1,4 +1,54 @@
-.container {
-  /* background-color: aqua; */
+.App {
+    display: grid;
+    grid-template-columns: 20px Auto 20px;
+    grid-template-rows: auto;
+    row-gap: 1em;
+    grid-template-areas: 
+        ". NavBar  ."
+        ". NewsLetter."
+        ". Services ."
+        ". Tests ."
+        ". Contacts ."
+        ". Footer . "; 
+}
 
+.NavBar{
+    grid-area: NavBar;
+    background-color: darkgray;
+    align-self: center;
+    height: 100px;
+    text-align: center;
+    
+}
+
+.NewsLetter{
+    grid-area: NewsLetter;
+    background-color:bisque;
+    align-self: center;
+}
+
+.Services{
+    grid-area: Services;
+    background-color:blanchedalmond;
+    align-self: center;
+}
+
+.Tests{
+    grid-area: Tests;
+    background-color: beige;
+    align-self: center;
+}
+
+.Contacts{
+    grid-area: Contacts;
+    background-color: azure;
+    align-self: center;
+}
+
+.Footer{
+    grid-area: Footer; 
+    background-color: darkgray;
+    align-self: center;
+    height: 100px;
+    text-align: center;
 }

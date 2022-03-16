@@ -1,43 +1,124 @@
-import { useState, useEffect } from 'react'
+// Dependency Imports
+import * as React from 'react';
+import { Button, Card, CardContent, CardActions, CardActionArea, CardMedia, Typography } from '@mui/material'
+import { fullname, LoremIpsum } from 'react-lorem-ipsum';
+// Component Imports
+import NavBar from './NavBar';
+import Footer from './Footer';
+// Styling Imports
 import './App.css';
+// Asset Imports
+import newsLetter from './newsLetter.jpg';
+import happyCustomer from './happyCustomer.jpg';
+import contactUs from './contactUs.jpg';
+import bizServices from './bizServices.jpg';
 
-const App = () => {
-  const [width, setWindowWidth] = useState(0);
+const customer1 = fullname('female')
+const customerName = fullname('female')
 
-  const [height, setWindowHeight] = useState(0);
-
-
-  const updateWindow = () => {
-
-    const iWidth = window.document.body.clientWidth
-
-    const iHeight = window.innerHeight
-
-    setWindowWidth(iWidth)
-
-    setWindowHeight(iHeight)
-
-  }
-
-  useEffect(() => {
-
-    updateWindow();
-
-    window.addEventListener('resize', updateWindow)
-
-    return () =>
-      window.removeEventListener('resize', updateWindow)
-
-  }, [])
-
-
+export default function App() {
 
   return (
-    <div className="App container" style={{ 'height': height, 'width': width, 'background-color': 'aqua' }}>
-      <h1> {`Container // width: ${width}px & height: ${height}px`} </h1>
-
+    <div className="App" >
+      <div className='NavBar'>
+        <NavBar />
+      </div>
+      <div className='NewsLetter'>
+        <Card>
+          <CardContent>
+            <CardMedia
+              component="img"
+              height="200"
+              image={newsLetter}
+              alt="newsletter sign up"
+            />
+            <Typography gutterBottom variant="h5" component="div">
+              Pick Up Insider Tips To Help
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              <LoremIpsum p={1} />
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" color="primary">
+              Get Tips
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
+      <div className='Services'>
+        <Card>
+          <CardMedia
+            component="img"
+            height="200"
+            image={bizServices}
+            alt="newsletter sign up"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Let Our Team Help Your Team
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              <LoremIpsum p={1} />
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" color="primary">
+              Our Services
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
+      <div className='Tests'>
+        <Card>
+          <CardContent>
+            <CardMedia
+              component="img"
+              height="200"
+              image={happyCustomer}
+              alt="newsletter sign up"
+            />
+            <Typography gutterBottom variant="h5" component="div">
+              {customer1}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              <LoremIpsum p={1} />
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" color="primary">
+              Happy Clients
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
+      <div className='Contacts'>
+        <Card>
+          <CardContent>
+            <CardMedia
+              component="img"
+              height="200"
+              image={contactUs}
+              alt="newsletter sign up"
+            />
+            <Typography gutterBottom variant="h5" component="div">
+              We Want To Hear From You!
+            </Typography>
+            <Typography variant="subtitle2" color="text.secondary">
+              <LoremIpsum p={1} />
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" color="primary">
+              Contact Us
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
+      <div className='Footer'>
+        <Footer />
+      </div>
     </div>
   );
 }
 
-export default App;
