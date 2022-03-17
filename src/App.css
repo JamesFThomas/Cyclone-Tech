@@ -18,30 +18,25 @@
     align-self: center;
     height: 100px;
     text-align: center;
-    
-}
+ }
 
 .NewsLetter{
     grid-area: NewsLetter;
-    background-color:bisque;
     align-self: center;
 }
 
 .Services{
     grid-area: Services;
-    background-color:blanchedalmond;
     align-self: center;
 }
 
 .Tests{
     grid-area: Tests;
-    background-color: beige;
     align-self: center;
 }
 
 .Contacts{
     grid-area: Contacts;
-    background-color: azure;
     align-self: center;
 }
 
@@ -52,3 +47,33 @@
     height: 100px;
     text-align: center;
 }
+
+/* Media Queries For Responsive Layout*/
+
+/* Tablet */
+
+@media only screen and (min-width: 550px) {
+    .App {
+        grid-template-columns: 20px Auto Auto 20px;
+        grid-template-rows: auto;
+        column-gap: 1em;
+        grid-template-areas: 
+            ". NavBar NavBar ."
+            ". NewsLetter Services."
+            ". Tests Contacts ."
+            ". Footer Footer . "; 
+    }
+  }
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+    .App {
+        grid-template-columns: 20px Auto Auto Auto Auto 20px;
+        grid-template-rows: auto;
+        column-gap: 1em;
+        grid-template-areas: 
+            ". NavBar NavBar NavBar NavBar  ."
+            ". NewsLetter Services Tests Contacts ."
+            ". Footer Footer Footer Footer . "; 
+    }
+  }

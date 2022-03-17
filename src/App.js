@@ -13,8 +13,7 @@ import happyCustomer from './happyCustomer.jpg';
 import contactUs from './contactUs.jpg';
 import bizServices from './bizServices.jpg';
 
-const customer1 = fullname('female')
-const customerName = fullname('female')
+const customerName = fullname('female') // using lorem-ipsum fullname() for card info
 
 export default function App() {
 
@@ -79,7 +78,7 @@ export default function App() {
               alt="newsletter sign up"
             />
             <Typography gutterBottom variant="h5" component="div">
-              {customer1}
+              {customerName}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               <LoremIpsum p={1} />
