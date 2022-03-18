@@ -54,7 +54,7 @@
 
 /* Tablet */
 
-@media (min-width: 550px) and (max-width: 799px) {
+@media (min-width: 580px) and (max-width: 799px) {
     .App {
         grid-template-columns: 10px 1fr 1fr 10px;
         grid-template-rows: auto;

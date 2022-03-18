@@ -1,6 +1,5 @@
 // Dependency Imports
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import CycloneIcon from '@mui/icons-material/Cyclone';
@@ -24,11 +23,11 @@ export default function NavBar() {
     };
 
     return (
-        <div className='navGrid'>
-            <div className='navLogo'>
-                <CycloneIcon style={{ fontSize: 60, color: "white" }} />
-                <Typography className='navName' variant="caption" display="inline" component="div" gutterBottom style={{ color: "white" }}>
-                    CY-TECH INC.
+        <div className='navGrid' >
+            <div className='navLogo' >
+                <CycloneIcon style={{ fontSize: 50, color: "white" }} />
+                <Typography className='navName' variant="caption" display="block" component="div" gutterBottom style={{ color: "white" }}>
+                    Cy-Tech Inc.
                 </Typography>
             </div>
             <div className='navBurger'>
@@ -39,7 +38,7 @@ export default function NavBar() {
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
                 >
-                    <MenuIcon mt={3} style={{ fontSize: 60 }} />
+                    <MenuIcon style={{ fontSize: 50, color: "white" }} />
                 </Button>
                 <Menu
                     id="basic-menu"
@@ -57,29 +56,29 @@ export default function NavBar() {
                     <Divider />
                     <MenuItem onClick={handleClose}>Testimonials</MenuItem>
                     <Divider />
-                    <MenuItem onClick={handleClose}>Contact Us</MenuItem>
+                    <MenuItem onClick={handleClose}>Contacts</MenuItem>
                 </Menu>
             </div>
             <div className='navButtons'>
-                <ButtonGroup variant="outlined" aria-label="text button group" style={{ backgroundColor: "white" }}>
+                <ButtonGroup variant="text" aria-label="small button group" style={{ backgroundColor: "white" }}>
                     <Button >
-                        <Typography variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
                             NewsLetter
                         </Typography>
                     </Button>
                     <Button>
-                        <Typography variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
                             Services
                         </Typography>
                     </Button>
                     <Button>
-                        <Typography variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
                             Testimonials
                         </Typography>
                     </Button>
                     <Button>
                         <Typography variant="button" display="block" gutterBottom>
-                            Contact Us
+                            Contacts
                         </Typography>
                     </Button>
                 </ButtonGroup>
