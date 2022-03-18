@@ -1,0 +1,82 @@
+/* Main CSS Grid */
+.navGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 1em;
+    grid-template-areas: 
+        "navLogo navBurger navButtons"; 
+}
+
+ /* Grid Items */
+
+ .navLogo{
+    grid-area: navLogo;
+    align-self: center;
+ }
+ .navBurger{
+    grid-area: navBurger;
+    align-self: center;
+ }
+ .navButtons{
+    grid-area: navButtons;
+    align-self: center;
+    display: none;
+ }
+
+
+/* Media Queries For Responsive Layout*/
+
+/* Tablet */
+
+@media (min-width: 550px) and (max-width: 799px) {
+    .navGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 1em;
+        grid-template-areas: 
+            "navLogo navButtons"; 
+    }
+    .navLogo{
+        grid-area: navLogo;
+        align-self: center;
+     }
+     .navBurger{
+        grid-area: navBurger;
+        display: none;
+     }
+     .navButtons{
+        grid-area: navButtons;
+        align-self: center;
+        display: unset;
+     }
+  }
+
+/* Desktop */
+
+@media (min-width: 800px) and (max-width: 2000px) {
+    .navGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 1em;
+        grid-template-areas: 
+            "navLogo navButtons"; 
+    }
+    .navLogo{
+        grid-area: navLogo;
+        align-self: center;
+     }
+     .navName{
+         font-size: 1em;
+     }
+     .navBurger{
+        grid-area: navBurger;
+        align-self: center;
+        display: none;
+    }
+    .navButtons{
+        grid-area: navButtons;
+        align-self: center;
+        display: unset;
+     }
+  }

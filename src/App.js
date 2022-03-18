@@ -6,7 +6,7 @@ import { fullname, LoremIpsum } from 'react-lorem-ipsum';
 import NavBar from './NavBar';
 import Footer from './Footer';
 // Styling Imports
-import './App.css';
+import './styles/App.css';
 // Asset Imports
 import newsLetter from './newsLetter.jpg';
 import happyCustomer from './happyCustomer.jpg';
@@ -103,7 +103,7 @@ export default function App() {
             <Typography gutterBottom variant="h5" component="div">
               We Want To Hear From You!
             </Typography>
-            <Typography variant="subtitle2" color="text.secondary">
+            <Typography variant="body2" color="text.secondary">
               <LoremIpsum p={1} />
             </Typography>
           </CardContent>

@@ -6,10 +6,10 @@ export default function Footer() {
 
     return (
         <div >
-            <Typography mt={3} variant="subtitle2" component="div" gutterBottom >
+            <Typography mt={3} variant="subtitle2" component="div" style={{ color: "white" }} gutterBottom >
                 Copyright <span>&#169;</span> {(new Date().getFullYear())}
                 <br />
-                ThisCompany, Inc.
+                Cyclone Technologies Inc.
             </Typography>
         </div>
     );
