@@ -34,7 +34,7 @@
 /* Media Queries For Responsive Layout*/
 
 /* Tablet */
-
+/* 
 @media (min-width: 580px) and (max-width: 799px) {
     .navGrid {
         width: 100%;
@@ -62,7 +62,7 @@
         align-items: center;
         display: unset;
      }
-  }
+  } */
 
 
 /* Desktop */
