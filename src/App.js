@@ -26,6 +26,7 @@ export default function App() {
         <Card className='card' >
           <CardContent>
             <CardMedia
+              className='cardMedia'
               component="img"
               height="200"
               image={newsLetter}
@@ -46,9 +47,10 @@ export default function App() {
         </Card>
       </div>
       <div className='Services cards'>
-        <Card className='card'>
+        <Card className='card' >
           <CardContent>
             <CardMedia
+              className='cardMedia'
               component="img"
               height="200"
               image={bizServices}
@@ -69,9 +71,10 @@ export default function App() {
         </Card>
       </div>
       <div className='Tests cards'>
-        <Card className='card'>
+        <Card className='card' >
           <CardContent>
             <CardMedia
+              className='cardMedia'
               component="img"
               height="200"
               image={happyCustomer}
@@ -92,9 +95,10 @@ export default function App() {
         </Card>
       </div>
       <div className='Contacts cards'>
-        <Card className='card'>
+        <Card className='card' style={{ backgroundColor: "" }}>
           <CardContent>
             <CardMedia
+              className='cardMedia'
               component="img"
               height="200"
               image={contactUs}

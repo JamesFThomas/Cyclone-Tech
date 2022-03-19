@@ -1,3 +1,8 @@
+body{
+    background-color: RGB(190, 220, 240);
+}
+
+
 .App {
     display: grid;
     height: 100vh;
@@ -46,6 +51,17 @@
     margin-bottom: 5px;
 }
 
+.card{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardMedia{
+    border-radius: 2%;
+}
+
 
 /* Media Queries For Responsive Layout*/
 
@@ -62,12 +78,6 @@
             ". Tests Contacts ."
             ". Footer Footer . "; 
     }
-    .card{
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
 
   }
 
@@ -82,13 +92,6 @@
             ". NavBar NavBar NavBar NavBar  ."
             ". NewsLetter Services Tests Contacts ."
             ". Footer Footer Footer Footer . "; 
-    }
-
-    .card{
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
   }
