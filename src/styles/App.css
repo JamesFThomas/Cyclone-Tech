@@ -79,4 +79,12 @@
             ". NewsLetter Services Tests Contacts ."
             ". Footer Footer Footer Footer . "; 
     }
+    
+  .cards {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
   }

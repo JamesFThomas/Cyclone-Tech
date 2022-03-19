@@ -60,7 +60,7 @@ export default function NavBar() {
                 </Menu>
             </div>
             <div className='navButtons'>
-                <ButtonGroup variant="text" aria-label="small button group" style={{ backgroundColor: "white" }}>
+                <ButtonGroup variant="text" aria-label="small button group" style={{ backgroundColor: "darkgray" }}>
                     <Button >
                         <Typography className='navBtnText' variant="button" display="block" gutterBottom>
                             NewsLetter

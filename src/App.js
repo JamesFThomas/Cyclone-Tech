@@ -23,7 +23,7 @@ export default function App() {
         <NavBar />
       </div>
       <div className='NewsLetter'>
-        <Card>
+        <Card className='cards'>
           <CardContent>
             <CardMedia
               component="img"
@@ -46,14 +46,14 @@ export default function App() {
         </Card>
       </div>
       <div className='Services'>
-        <Card>
-          <CardMedia
-            component="img"
-            height="200"
-            image={bizServices}
-            alt="newsletter sign up"
-          />
+        <Card className='cards'>
           <CardContent>
+            <CardMedia
+              component="img"
+              height="200"
+              image={bizServices}
+              alt="business services"
+            />
             <Typography gutterBottom variant="h5" component="div">
               Let Our Team Help Your Team
             </Typography>
@@ -69,7 +69,7 @@ export default function App() {
         </Card>
       </div>
       <div className='Tests'>
-        <Card>
+        <Card className='cards'>
           <CardContent>
             <CardMedia
               component="img"
@@ -92,7 +92,7 @@ export default function App() {
         </Card>
       </div>
       <div className='Contacts'>
-        <Card>
+        <Card className='cards'>
           <CardContent>
             <CardMedia
               component="img"
