@@ -22,8 +22,8 @@ export default function App() {
       <div className='NavBar'>
         <NavBar />
       </div>
-      <div className='NewsLetter'>
-        <Card className='cards'>
+      <div className='NewsLetter cards'>
+        <Card className='card' >
           <CardContent>
             <CardMedia
               component="img"
@@ -39,14 +39,14 @@ export default function App() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button className='cardBtn' size="small" color="primary">
               Get Tips
             </Button>
           </CardActions>
         </Card>
       </div>
-      <div className='Services'>
-        <Card className='cards'>
+      <div className='Services cards'>
+        <Card className='card'>
           <CardContent>
             <CardMedia
               component="img"
@@ -62,14 +62,14 @@ export default function App() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button className='cardBtn' size="small" color="primary">
               Our Services
             </Button>
           </CardActions>
         </Card>
       </div>
-      <div className='Tests'>
-        <Card className='cards'>
+      <div className='Tests cards'>
+        <Card className='card'>
           <CardContent>
             <CardMedia
               component="img"
@@ -84,15 +84,15 @@ export default function App() {
               <LoremIpsum p={1} />
             </Typography>
           </CardContent>
-          <CardActions>
-            <Button size="small" color="primary">
+          <CardActions >
+            <Button className='cardBtn' size="small" color="primary">
               Happy Clients
             </Button>
           </CardActions>
         </Card>
       </div>
-      <div className='Contacts'>
-        <Card className='cards'>
+      <div className='Contacts cards'>
+        <Card className='card'>
           <CardContent>
             <CardMedia
               component="img"
@@ -108,7 +108,7 @@ export default function App() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button className='cardBtn' size="small" color="primary" >
               Contact Us
             </Button>
           </CardActions>
