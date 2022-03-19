@@ -95,7 +95,7 @@ export default function App() {
         </Card>
       </div>
       <div className='Contacts cards'>
-        <Card className='card' style={{ backgroundColor: "" }}>
+        <Card className='card'>
           <CardContent>
             <CardMedia
               className='cardMedia'
