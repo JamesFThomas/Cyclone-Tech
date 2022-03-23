@@ -1,7 +1,8 @@
 // Dependcy Imports
 import * as React from 'react';
-import { Button, Card, CardContent, CardActions, CardActionArea, CardMedia, Typography } from '@mui/material'
-import { fullname, LoremIpsum } from 'react-lorem-ipsum';
+import { Link } from "react-router-dom";
+import { Button, Card, CardContent, CardActions, CardMedia, Typography } from '@mui/material'
+import { LoremIpsum } from 'react-lorem-ipsum';
 
 //  Assets Imports
 import contactUs from '../../assets/contactUs.jpg';
@@ -27,8 +28,10 @@ export default function ContactsCard() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button className='cardBtn' size="small" color="primary" >
-                        Contact Us
+                    <Button className='cardBtn' size="small" color="primary">
+                        < Link to='/services'>
+                            Contact Us!
+                        </Link>
                     </Button>
                 </CardActions>
             </Card>

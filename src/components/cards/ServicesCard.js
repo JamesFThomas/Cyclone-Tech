@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Button, Card, CardContent, CardActions, CardActionArea, CardMedia, Typography } from '@mui/material'
-import { fullname, LoremIpsum } from 'react-lorem-ipsum';
+import { Link } from "react-router-dom";
+import { Button, Card, CardContent, CardActions, CardMedia, Typography } from '@mui/material'
+import { LoremIpsum } from 'react-lorem-ipsum';
 
 import bizServices from '../../assets/bizServices.jpg';
 
@@ -26,7 +27,9 @@ export default function ServicesCard() {
                 </CardContent>
                 <CardActions>
                     <Button className='cardBtn' size="small" color="primary">
-                        Our Services
+                        < Link to='/services'>
+                            Our Services
+                        </Link>
                     </Button>
                 </CardActions>
             </Card>

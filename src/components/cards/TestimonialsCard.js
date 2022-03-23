@@ -1,6 +1,7 @@
 // Dependcy Imports
 import * as React from 'react';
-import { Button, Card, CardContent, CardActions, CardActionArea, CardMedia, Typography } from '@mui/material'
+import { Link } from "react-router-dom";
+import { Button, Card, CardContent, CardActions, CardMedia, Typography } from '@mui/material'
 import { fullname, LoremIpsum } from 'react-lorem-ipsum';
 
 //  Assets Imports
@@ -30,9 +31,11 @@ export default function TestimonialsCard() {
                         <LoremIpsum p={1} />
                     </Typography>
                 </CardContent>
-                <CardActions >
+                <CardActions>
                     <Button className='cardBtn' size="small" color="primary">
-                        Happy Clients
+                        < Link to='/services'>
+                            Happy Clients
+                        </Link>
                     </Button>
                 </CardActions>
             </Card>
