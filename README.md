@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Cyclone Technologies Inc. Responsive Web Application
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+*** Web Examples ***
+
+- Home page responsive layout
+
+https://user-images.githubusercontent.com/57680469/159258709-2e9cad1b-beaf-40e7-beb7-ebd19b915f1d.mp4
+
 
 ## Available Scripts
 
