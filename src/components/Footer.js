@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 export default function Footer() {
 
     return (
-        <div >
+        <div className='Footer'>
             <Typography mt={3} variant="subtitle2" component="div" style={{ color: "white" }} gutterBottom >
                 Copyright <span>&#169;</span> {(new Date().getFullYear())}
                 <br />
