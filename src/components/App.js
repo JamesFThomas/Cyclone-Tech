@@ -10,6 +10,10 @@ import NewsLetterCard from './cards/NewsletterCard'
 import TestimonialsCard from './cards/TestimonialsCard'
 import ServicesCard from './cards/ServicesCard'
 import ContactsCard from './cards/ContactsCard'
+import Newsletter from '../components/pages/Newsletter';
+import Services from '../components/pages/Services';
+import Testimonials from '../components/pages/Testimonials';
+import Contacts from '../components/pages/Contacts';
 
 // Styling Imports
 import '../styles/App.css';
@@ -21,6 +25,10 @@ export default function App() {
     < Router>
       <div className="App" >
         <Routes>
+          <Route path="/newsletter" element={< Newsletter />} />
+          <Route path="/services" element={< Services />} />
+          <Route path="/testimonials" element={< Testimonials />} />
+          <Route path="/contacts" element={< Contacts />} />
           <Route path='/'
             element={
               <Fragment>

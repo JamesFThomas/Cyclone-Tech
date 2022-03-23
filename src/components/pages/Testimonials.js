@@ -1,21 +1,23 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import NavBar from '../NavBar';
+import Footer from '../Footer';
 
-export default function NewsLetter() {
+import '../../styles/Pages.css'
+
+export default function Testimonials() {
 
     return (
-        <div className='newsLGrid'>
-            <div className='newsLHead'>
+        <div className='pageGrid'>
+            <div className='pageHead'>
                 <NavBar />
             </div>
-            <div className='newsLBody'>
+            <div className='pageBody'>
                 <Typography mt={3} variant="subtitle2" component="div" style={{ color: "red" }} gutterBottom >
-                    NewsLetter
+                    Testimonials
                 </Typography>
             </div>
-            <div className='newsLFoot'>
+            <div className='pageFoot'>
                 <Footer />
             </div>
         </div >

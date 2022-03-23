@@ -1,7 +1,6 @@
 // Dependency Imports
 import * as React from 'react';
-import { Button, Card, CardContent, CardActions, CardActionArea, CardMedia, Typography } from '@mui/material'
-import CycloneIcon from '@mui/icons-material/Cyclone';
+import { Card, CardContent, CardMedia } from '@mui/material'
 
 // Assest Import
 import CyTechLogo from '../../assets/CyTechLogoSmall.png'
