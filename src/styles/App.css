@@ -45,9 +45,12 @@ body{
 .Footer{
     grid-area: Footer; 
     background-color: darkgray;
-    align-self: center;
     height: 100px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
     margin-bottom: 5px;
 }
 

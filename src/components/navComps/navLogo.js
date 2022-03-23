@@ -1,16 +1,26 @@
 // Dependency Imports
 import * as React from 'react';
+import { Button, Card, CardContent, CardActions, CardActionArea, CardMedia, Typography } from '@mui/material'
 import CycloneIcon from '@mui/icons-material/Cyclone';
-import Typography from '@mui/material/Typography';
+
+// Assest Import
+import CyTechLogo from '../../assets/CyTechLogoSmall.png'
+
 
 export default function NavLogo() {
 
     return (
         <div className='navLogo' >
-            <CycloneIcon style={{ fontSize: 50, color: "white" }} />
-            <Typography className='navName' variant="caption" display="block" component="div" gutterBottom style={{ color: "white" }}>
-                Cy-Tech Inc.
-            </Typography>
+            <Card >
+                <CardContent >
+                    <CardMedia
+                        className='cardMediaNav'
+                        component="img"
+                        image={CyTechLogo}
+                        alt="Cyclone Technologies Full Logo"
+                    />
+                </CardContent>
+            </Card>
         </div>
     );
 }

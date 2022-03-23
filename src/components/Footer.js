@@ -2,14 +2,16 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+import CyTechEmb from '../assets/CyTechEmblem.png'
+
 export default function Footer() {
 
     return (
         <div className='Footer'>
-            <Typography mt={3} variant="subtitle2" component="div" style={{ color: "white" }} gutterBottom >
+            <Typography variant="subtitle2" component="div" style={{ color: "white" }} gutterBottom >
                 Copyright <span>&#169;</span> {(new Date().getFullYear())}
                 <br />
-                Cyclone Technologies Inc.
+                Cycl<span ><img src={CyTechEmb} alt='cyclone technologies emblem' style={{ height: ".95em", width: "auto" }} /></span>ne Technologies Inc.
             </Typography>
         </div>
     );
