@@ -27,7 +27,7 @@ export default function ServicesCard() {
                 </CardContent>
                 <CardActions>
                     <Button className='cardBtn' size="small" color="primary">
-                        < Link to='/services'>
+                        < Link className='link' to='/services'>
                             Our Services
                         </Link>
                     </Button>

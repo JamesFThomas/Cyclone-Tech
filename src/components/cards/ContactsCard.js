@@ -29,7 +29,7 @@ export default function ContactsCard() {
                 </CardContent>
                 <CardActions>
                     <Button className='cardBtn' size="small" color="primary">
-                        < Link to='/services'>
+                        < Link className='link' to='/services'>
                             Contact Us!
                         </Link>
                     </Button>

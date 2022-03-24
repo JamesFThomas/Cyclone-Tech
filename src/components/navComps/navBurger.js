@@ -1,11 +1,12 @@
 // Dependency Imports
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import Typography from '@mui/material/Typography';
 
 export default function NavBurger() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -38,13 +39,35 @@ export default function NavBurger() {
                 }}
             >
 
-                <MenuItem onClick={handleClose}>NewsLetter</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link className='link' to='/'>
+                        Home
+                    </Link>
+                </MenuItem>
                 <Divider />
-                <MenuItem onClick={handleClose}>Services</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link className='link' to='/newsletter'>
+                        Newsletter
+                    </Link>
+                </MenuItem>
                 <Divider />
-                <MenuItem onClick={handleClose}>Testimonials</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link className='link' to='/services'>
+                        Services
+                    </Link>
+                </MenuItem>
                 <Divider />
-                <MenuItem onClick={handleClose}>Contacts</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link className='link' to='/testimonials'>
+                        Testimonials
+                    </Link>
+                </MenuItem>
+                <Divider />
+                <MenuItem onClick={handleClose}>
+                    <Link className='link' to='/contacts'>
+                        Contacts
+                    </Link>
+                </MenuItem>
             </Menu>
         </div>
     );

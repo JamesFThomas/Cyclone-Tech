@@ -7,7 +7,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: auto;
+    grid-template-rows: 100px auto auto auto auto 100px;
     row-gap: 1em;
     grid-template-areas: 
         ". NavBar  ."
@@ -65,6 +65,11 @@ body{
     border-radius: 2%;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* Media Queries For Responsive Layout*/
 
@@ -73,7 +78,7 @@ body{
 @media (min-width: 580px) and (max-width: 799px) {
     .App {
         grid-template-columns: 10px 1fr 1fr 10px;
-        grid-template-rows: auto;
+        grid-template-rows: 100px auto auto 100px;
         column-gap: 1em;
         grid-template-areas: 
             ". NavBar NavBar ."
@@ -89,8 +94,8 @@ body{
 @media (min-width: 800px) and (max-width: 2000px) {
     .App {
         grid-template-columns: 5px 1fr 1fr 1fr 1fr 5px;
-        grid-template-rows: auto;
-        column-gap: 1em;
+        grid-template-rows: 100px auto 100px;
+        column-gap: .5em;
         grid-template-areas: 
             ". NavBar NavBar NavBar NavBar  ."
             ". NewsLetter Services Tests Contacts ."

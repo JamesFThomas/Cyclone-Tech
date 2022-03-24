@@ -27,7 +27,7 @@ export default function NewsLetterCard() {
                 </CardContent>
                 <CardActions>
                     <Button className='cardBtn' size="small" color="primary">
-                        < Link to='/newsletter'>
+                        < Link className='link' to='/newsletter'>
                             Get Tips
                         </Link>
                     </Button>
