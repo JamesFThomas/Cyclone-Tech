@@ -8,6 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://user-images.githubusercontent.com/57680469/159258709-2e9cad1b-beaf-40e7-beb7-ebd19b915f1d.mp4
 
+- NewsLetter Page
+
+https://user-images.githubusercontent.com/57680469/160157845-e38a7266-d68c-49b2-b13e-1783650efb62.mp4
+
 
 ## Available Scripts
 
