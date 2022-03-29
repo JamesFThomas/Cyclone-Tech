@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/57680469/159258709-2e9cad1b-beaf-40e7-
 
 - NewsLetter Page
 
-https://user-images.githubusercontent.com/57680469/160157845-e38a7266-d68c-49b2-b13e-1783650efb62.mp4
+https://user-images.githubusercontent.com/57680469/160159003-0e622318-6a17-465c-a43f-e0947210e46d.mp4
 
 
 ## Available Scripts
