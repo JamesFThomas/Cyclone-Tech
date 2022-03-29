@@ -16,7 +16,7 @@ export default function ClientStories({ clients }) {
 
     return (
         <div className='pageBody' >
-            <div className='clientBody'>
+            <div className='clientBody' >
                 <Typography className='clientTitle' mt={3} variant="h6" style={{ color: "Green" }}  >
                     Testimonials
                 </Typography>
