@@ -9,17 +9,13 @@ export default function Contacts() {
 
     return (
         <div className='pageGrid'>
-            <div className='pageHead'>
-                <NavBar />
-            </div>
+            <NavBar />
             <div className='pageBody'>
                 <Typography mt={3} variant="subtitle2" component="div" style={{ color: "red" }} gutterBottom >
                     Contacts
                 </Typography>
             </div>
-            <div className='pageFoot'>
-                <Footer />
-            </div>
+            <Footer />
         </div >
     );
 }

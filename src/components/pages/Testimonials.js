@@ -1,25 +1,20 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
+
+// component imports 
 import NavBar from '../NavBar';
 import Footer from '../Footer';
+import ClientStories from '../pageComps/clinetStories'
 
 import '../../styles/Pages.css'
 
-export default function Testimonials() {
+export default function Testimonials({ clients }) {
 
     return (
         <div className='pageGrid'>
-            <div className='pageHead'>
-                <NavBar />
-            </div>
-            <div className='pageBody'>
-                <Typography mt={3} variant="subtitle2" component="div" style={{ color: "red" }} gutterBottom >
-                    Testimonials
-                </Typography>
-            </div>
-            <div className='pageFoot'>
-                <Footer />
-            </div>
+            <NavBar />
+            < ClientStories clients={clients} />
+            <Footer />
         </div >
     );
 }

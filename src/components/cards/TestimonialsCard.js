@@ -33,7 +33,7 @@ export default function TestimonialsCard() {
                 </CardContent>
                 <CardActions>
                     <Button className='cardBtn' size="small" color="primary">
-                        < Link className='link' to='/services'>
+                        < Link className='link' to='/testimonials'>
                             Happy Clients
                         </Link>
                     </Button>

@@ -1,15 +1,11 @@
 // Dependency Imports 
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
-import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
-import Checkbox from '@mui/material/Checkbox';
 
 // Asset Imports
-import wwLogo from '../../assets/wwLogo.jpg'
 import wwLogo2 from '../../assets/wwLogo2.png'
 
 // Style Imports

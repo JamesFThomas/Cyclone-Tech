@@ -18,6 +18,9 @@ import Contacts from '../components/pages/Contacts';
 // Styling Imports
 import '../styles/App.css';
 
+// Asset Imports
+const { clients } = require('../assets/clients.js');
+
 
 export default function App() {
 
@@ -27,7 +30,7 @@ export default function App() {
         <Routes>
           <Route path="/newsletter" element={< Newsletter />} />
           <Route path="/services" element={< Services />} />
-          <Route path="/testimonials" element={< Testimonials />} />
+          <Route path="/testimonials" element={< Testimonials clients={clients} />} />
           <Route path="/contacts" element={< Contacts />} />
           <Route path='/'
             element={

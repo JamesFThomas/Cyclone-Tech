@@ -15,13 +15,9 @@ export default function NewsLetter() {
 
     return (
         <div className='pageGrid'>
-            <div className='pageHead'>
-                <NavBar />
-            </div>
+            <NavBar />
             < SignUp />
-            <div className='pageFoot'>
-                <Footer />
-            </div>
+            <Footer />
         </div >
     );
 }

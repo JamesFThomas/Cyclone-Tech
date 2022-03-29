@@ -6,9 +6,9 @@
     grid-template-rows: 100px auto 100px;
     row-gap: 1em;
     grid-template-areas: 
-        ". pageHead ."
+        ". NavBar ."
         ". pageBody ."
-        ". pageFoot ."; 
+        ". Footer ."; 
 }
 .pageHead{
     grid-area: pageHead;
