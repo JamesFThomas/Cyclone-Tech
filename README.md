@@ -2,15 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-*** Web Examples ***
+*** Website Examples ***
 
 - Home page responsive layout
 
 https://user-images.githubusercontent.com/57680469/159258709-2e9cad1b-beaf-40e7-beb7-ebd19b915f1d.mp4
 
+
 - NewsLetter Page
 
 https://user-images.githubusercontent.com/57680469/160159003-0e622318-6a17-465c-a43f-e0947210e46d.mp4
+
 
 - Services Page 
 
@@ -18,6 +20,8 @@ https://user-images.githubusercontent.com/57680469/160898455-e11926ec-bbc1-4fb8-
 
 
 - Testimonials Page
+
+https://user-images.githubusercontent.com/57680469/160944593-c6dbe351-49f6-471c-ae44-4e2d1ed03cde.mp4
 
 
 
