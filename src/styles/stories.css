@@ -9,7 +9,7 @@
     grid-template-areas: 
         ". clientTitle ."
         ". clientCard0 ." 
-        ". clientCard1." 
+        ". clientCard1 ." 
         ". clientCard2 ." 
         ". clientCard3 ." 
         ". clientCard4 ." 
@@ -27,11 +27,16 @@
     text-align: center;
 }
 
+.clientImage{
+    padding: 5px;
+}
+
 .clientCard0{
     grid-area: clientCard0;
     align-self: center;
     text-align: center;
 }
+
 .clientCard1{
     grid-area: clientCard1;
     align-self: center;

@@ -19,7 +19,8 @@ import Contacts from '../components/pages/Contacts';
 import '../styles/App.css';
 
 // Asset Imports
-const { clients } = require('../assets/clients.js');
+import { services } from '../assets/serviceInfo.js';
+import { clients } from '../assets/clients.js';
 
 
 export default function App() {
@@ -29,7 +30,7 @@ export default function App() {
       <div className="App" >
         <Routes>
           <Route path="/newsletter" element={< Newsletter />} />
-          <Route path="/services" element={< Services />} />
+          <Route path="/services" element={< Services services={services} />} />
           <Route path="/testimonials" element={< Testimonials clients={clients} />} />
           <Route path="/contacts" element={< Contacts />} />
           <Route path='/'

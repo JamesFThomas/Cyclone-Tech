@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 // component imports 
 import NavBar from '../NavBar';
 import Footer from '../Footer';
-import ClientStories from '../pageComps/clinetStories'
+import ClientStories from '../pageComps/clientStories'
 
 import '../../styles/Pages.css'
 

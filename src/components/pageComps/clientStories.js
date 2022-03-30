@@ -21,7 +21,7 @@ export default function ClientStories({ clients }) {
                     Testimonials
                 </Typography>
                 {clients.map(({ name, location, designation, avatar, message, rating, audio, }, i) => {
-                    return <Card className={`clientCard${i} clientCard`} sx={{ display: 'flex' }}>
+                    return <Card className={`clientCard clientCard${i}`} key={i} sx={{ display: 'flex', backgroundColor: 'RGBA(190, 220, 240, .3)' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             <Stack spacing={1} >
                                 <Rating name="simple-controlled" value={rating} precision={0.5} readOnly />

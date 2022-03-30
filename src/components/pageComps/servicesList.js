@@ -1,12 +1,11 @@
 // Dependency Imports 
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+
 
 // Asset Imports
 // import wwLogo2 from '../../assets/wwLogo2.png'
@@ -14,66 +13,28 @@ import Button from '@mui/material/Button';
 // Style Imports
 import '../../styles/servicesList.css'
 
-export default function ServicesList() {
+export default function ServicesList({ services }) {
 
     return (
-        <div className='pageBody'>
-            <Paper className='servicesPaper' variant="outlined" >
-                <div className='servicesGrid'>
-                    <Card sx={{ display: 'flex' }}>
-                        <CardContent>
-                            <Typography mt={3} variant="subtitle1" component="div" style={{ color: "red" }} gutterBottom >
-                                Cloud Services
+        <div className='pageBody' >
+            <div className='servicesBody' >
+                <Typography className='servicesTitle' mt={3} variant="h6" style={{ color: "Green" }}  >
+                    Services
+                </Typography>
+                {services.map(({ service, Icon, description }, i) => {
+                    return <Card className={`servicesCard servicesCard${i}`} key={i} sx={{ backgroundColor: 'RGBA(190, 220, 240, .3)' }}>
+                        < Icon className='servicesIcon' sx={{ fontSize: 60 }} />
+                        <Typography component="div" variant="h6">
+                            {service}
+                        </Typography>
+                        <CardContent sx={{ flex: '1 0 auto' }}>
+                            <Typography variant="caption" color="text.secondary" component="div">
+                                {description}
                             </Typography>
                         </CardContent>
-                        <CardMedia
-                            component="img"
-                            // sx={{ height: 100, width: 100 }}
-                            image=""
-                            alt=""
-                        />
                     </Card>
-                    <Card sx={{ display: 'flex' }}>
-                        <CardContent>
-                            <Typography mt={3} variant="subtitle1" component="div" style={{ color: "red" }} gutterBottom >
-                                Data Secuirty
-                            </Typography>
-                        </CardContent>
-                        <CardMedia
-                            component="img"
-                            // sx={{ height: 50, width: 50 }}
-                            image=""
-                            alt=""
-                        />
-                    </Card>
-                    <Card sx={{ display: 'flex' }}>
-                        <CardContent>
-                            <Typography mt={3} variant="subtitle1" component="div" style={{ color: "red" }} gutterBottom >
-                                Technical Support
-                            </Typography>
-                        </CardContent>
-                        <CardMedia
-                            component="img"
-                            // sx={{ height: 50, width: 50 }}
-                            image=""
-                            alt=""
-                        />
-                    </Card>
-                    <Card sx={{ display: 'flex' }}>
-                        <CardContent>
-                            <Typography mt={3} variant="subtitle1" component="div" style={{ color: "red" }} gutterBottom >
-                                Application Servers
-                            </Typography>
-                        </CardContent>
-                        <CardMedia
-                            component="img"
-                            // sx={{ height: 50, width: 50 }}
-                            image=""
-                            alt=""
-                        />
-                    </Card>
-                </div>
-            </Paper>
+                })}
+            </div>
         </div>
     );
 }

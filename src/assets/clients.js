@@ -11,18 +11,6 @@ const clients = [
     { "id": 10, "name": "Mikayla Mccullough", "location": "Madrid, Spain", "designation": "Designer", "avatar": "https://testimonialapi.toolcarton.com/avatar/10.jpg", "message": "The vibe, level of inquiry, feedback and traffic at our product services and newly designed booth at a recent conference was very positive.", "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non fringilla leo. Phasellus dui erat, ultrices sollicitudin ante quis, convallis varius odio. Quisque sed tristique ante.", "rating": 2, "audio": "https://testimonialapi.toolcarton.com/audio/10.mp3" }
 ]
 
-const client = {
-    id: 1,
-    name: "Lance Jarvis",
-    location: "London, UK",
-    designation: "General Manager ",
-    avatar: "https://testimonialapi.toolcarton.com/avatar/1.jpg",
-    message: "We have been using product for last one year, and I have to say that it has transformed the way we do business. Thank you for awesome service.",
-    lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non fringilla leo. Phasellus dui erat, ultrices sollicitudin ante quis, convallis varius odio. Quisque sed tristique ante.",
-    rating: 4.8,
-    audio: "https://testimonialapi.toolcarton.com/audio/1.mp3"
-}
-
 module.exports = {
     clients,
 };
