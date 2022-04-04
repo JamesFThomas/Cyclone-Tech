@@ -24,6 +24,10 @@ https://user-images.githubusercontent.com/57680469/160898455-e11926ec-bbc1-4fb8-
 https://user-images.githubusercontent.com/57680469/160944593-c6dbe351-49f6-471c-ae44-4e2d1ed03cde.mp4
 
 
+- Contacts Page
+
+https://user-images.githubusercontent.com/57680469/161589573-5490a9bf-189a-4280-886f-6640fb885e47.mp4
+
 
 ## Available Scripts
 
