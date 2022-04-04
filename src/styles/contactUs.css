@@ -1,0 +1,105 @@
+.contactsBody {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 70px auto;
+    row-gap: 1em;
+    /* column-gap: 1em; */
+    grid-template-areas:
+        ". contactsTitle ."
+        ". contactsPhoto ."
+        ". contactsName ."
+        ". contactsEmail ."
+        ". contactsNote ."
+        ". contactsBtn ."
+        ". contactsIcons ."
+        ". contactsLogo ."
+}
+
+.contactsTitle {
+    grid-area: contactsTitle;
+    align-self: center;
+    text-align: center;
+}
+
+.contactsPhoto {
+    grid-area: contactsPhoto;
+    text-align: center;
+    margin: 0px;
+
+}
+
+.contactsName {
+    grid-area: contactsName;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.contactsEmail {
+    grid-area: contactsEmail;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.contactsNote {
+    grid-area: contactsNote;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
+
+.contactsBtn {
+    grid-area: contactsBtn;
+    text-align: center;
+}
+
+.contactsIcons {
+    grid-area: contactsIcons;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.contactsLogo {
+    grid-area: contactsLogo;
+    margin: 0px;
+    display: none;
+}
+
+/* Media Queries For Responsive Layout*/
+
+/* Tablet */
+
+/* @media (min-width: 580px) and (max-width: 799px) {} */
+
+/* Desktop */
+
+@media (min-width: 800px) and (max-width: 2000px) {
+    .contactsBody {
+        grid-template-columns: 20px auto auto 20px;
+        grid-template-rows: 80px auto auto auto auto 1em;
+        row-gap: 1em;
+        column-gap: 1em;
+        grid-template-areas:
+            ". contactsTitle contactsTitle ."
+            ". contactsLogo contactsPhoto  ."
+            ". contactsName  . ."
+            ". contactsEmail contactsBtn  ."
+            ". contactsNote contactsIcons ."
+            ". . . .";
+    }
+
+    .contactsLogo {
+        display: unset;
+    }
+
+}

@@ -1,27 +1,28 @@
-.pageGrid{
+.pageGrid {
     display: grid;
     height: 100vh;
     width: 99vw;
-    grid-template-columns: 20px auto 20px;
+    grid-template-columns: 3% auto 3%;
     grid-template-rows: 100px auto 100px;
     row-gap: 1em;
-    grid-template-areas: 
+    grid-template-areas:
         ". NavBar ."
         ". pageBody ."
-        ". Footer ."; 
+        ". Footer .";
 }
-.pageHead{
+
+.pageHead {
     grid-area: pageHead;
     align-self: center;
     text-align: center;
 }
 
-.pageBody{
+.pageBody {
     grid-area: pageBody;
     text-align: center;
 }
 
-.pageFoot{
+.pageFoot {
     grid-area: pageFoot;
 }
 
@@ -30,31 +31,8 @@
 
 /* Tablet */
 
-@media (min-width: 580px) and (max-width: 799px) {
-    /* .pageGrid {
-        grid-template-columns: 10px 1fr 1fr 10px;
-        grid-template-rows: auto;
-        column-gap: 1em;
-        grid-template-areas: 
-            ""
-            ""
-            ""
-            ""; 
-    } */
-
-  }
+/* @media (min-width: 580px) and (max-width: 799px) { } */
 
 /* Desktop */
 
-@media (min-width: 800px) and (max-width: 2000px) {
-    /* .pageGrid {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        column-gap: 1em;
-        grid-template-areas: 
-            ""
-            ""
-            ""; 
-    } */
-
-  }
+/* @media (min-width: 800px) and (max-width: 2000px) {} */
