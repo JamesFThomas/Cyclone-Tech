@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6ba37981.css",
+    "main.js": "/static/js/main.1acdf581.js",
+    "static/media/wwLogo2.png": "/static/media/wwLogo2.e4269402b1653d0ccdf3.png",
+    "static/media/gLocation.png": "/static/media/gLocation.3abee8c27043b9763955.png",
+    "static/media/happyEmployee.jpg": "/static/media/happyEmployee.24963083bd6256af5bce.jpg",
+    "static/media/bizServices.jpg": "/static/media/bizServices.98f3cf1ba68c3aae5c2e.jpg",
+    "static/media/happyCustomer.jpg": "/static/media/happyCustomer.1c04423b5d0b3a679415.jpg",
+    "static/media/contactUs.jpg": "/static/media/contactUs.05069f3ca65c66944042.jpg",
+    "static/media/newsLetter.jpg": "/static/media/newsLetter.a5b19c5939cbb018f0ad.jpg",
+    "index.html": "/index.html",
+    "main.6ba37981.css.map": "/static/css/main.6ba37981.css.map",
+    "main.1acdf581.js.map": "/static/js/main.1acdf581.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ba37981.css",
+    "static/js/main.1acdf581.js"
+  ]
+}

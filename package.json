@@ -2,7 +2,7 @@
   "name": "react_shell",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://JamesFThomas.github.io/Cyclone-Tech",
+  "homepage": "https://JamesFThomas.github.io/Cyclone-Tech",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
