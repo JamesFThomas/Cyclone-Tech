@@ -20,7 +20,7 @@ import '../styles/App.css';
 
 // Asset Imports
 import { services } from '../assets/serviceInfo.js';
-import { clients } from '../assets/clients.js';
+// import { clients } from '../assets/clients.js';
 
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
         <Routes>
           <Route path="/newsletter" element={< Newsletter />} />
           <Route path="/services" element={< Services services={services} />} />
-          <Route path="/testimonials" element={< Testimonials clients={clients} />} />
+          <Route path="/testimonials" element={< Testimonials />} />
           <Route path="/contacts" element={< Contacts />} />
           <Route path='/'
             element={

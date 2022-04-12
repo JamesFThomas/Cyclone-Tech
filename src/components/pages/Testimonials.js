@@ -8,12 +8,12 @@ import ClientStories from '../pageComps/clientStories'
 
 import '../../styles/Pages.css'
 
-export default function Testimonials({ clients }) {
+export default function Testimonials() {
 
     return (
         <div className='pageGrid'>
             <NavBar />
-            < ClientStories clients={clients} />
+            < ClientStories />
             <Footer />
         </div >
     );

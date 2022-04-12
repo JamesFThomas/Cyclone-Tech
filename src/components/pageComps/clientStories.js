@@ -1,5 +1,5 @@
 // Dependency Imports 
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -7,12 +7,25 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+import axios from "axios";
 
 // Style Imports
 import '../../styles/stories.css'
+// import { useEffect, useState } from 'react';
 
 
-export default function ClientStories({ clients }) {
+export default function ClientStories() {
+
+    const [stories, setStories] = useState([]);
+
+    useEffect(() => {
+
+        axios
+            .get('https://testimonialapi.toolcarton.com/api')
+            .then(clientInfo => {
+                setStories(clientInfo.data);
+            })
+    })
 
     return (
         <div className='pageBody' >
@@ -20,7 +33,7 @@ export default function ClientStories({ clients }) {
                 <Typography className='clientTitle' mt={3} variant="h6" style={{ color: "Green" }}  >
                     Testimonials
                 </Typography>
-                {clients.map(({ name, location, designation, avatar, message, rating, audio, }, i) => {
+                {stories.map(({ name, location, designation, avatar, message, rating, audio, }, i) => {
                     return <Card className={`clientCard clientCard${i}`} key={i} sx={{ display: 'flex', backgroundColor: 'RGBA(190, 220, 240, .3)' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             <Stack spacing={1} >
