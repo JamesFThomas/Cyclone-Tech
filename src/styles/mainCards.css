@@ -1,0 +1,19 @@
+.card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+.link {
+    text-decoration: none;
+    color: RGB(1, 42, 74);
+    /* align-self: flex-end; */
+}
+
+.cardContent {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 10px;
+}

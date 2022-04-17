@@ -5,10 +5,12 @@ import { LoremIpsum } from 'react-lorem-ipsum';
 
 import newsLetterPic from '../../assets/Newsletter.jpg';
 
+import "../../styles/mainCards.css"
+
 export default function NewsLetterCard() {
 
     return (
-        <div className='NewsLetter cards'>
+        <div className='NewsLetter'>
             <Card className='card' style={{ backgroundColor: "RGB(169, 214, 229)" }} >
                 <CardMedia
                     className='cardMedia'
@@ -18,18 +20,16 @@ export default function NewsLetterCard() {
                     alt="newsletter sign up"
                 />
                 <CardContent >
-                    < Grid container direction="column" alignItems="center" justify="center">
-                        <Typography variant="h5" component="div">
-                            Pick Up Insider Tips To Help
-                        </Typography>
-                        <Typography variant="body1" color="text.secondary">
-                            <LoremIpsum p={1} />
-                        </Typography>
-                    </Grid>
+                    <Typography variant="h5" component="div">
+                        Pick Up Insider Tips To Help
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary">
+                        <LoremIpsum p={1} />
+                    </Typography>
                 </CardContent>
-                <CardActions >
+                <CardActions className='cardContent'>
                     <Button className='cardBtn' size="small" color="primary">
-                        < Link className='link' to='/newsletter' style={{ color: "RGB(1, 42, 74)" }}>
+                        < Link className='link' to='/newsletter'>
                             Get Tips
                         </Link>
                     </Button>

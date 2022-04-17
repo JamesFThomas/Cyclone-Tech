@@ -55,22 +55,7 @@ body {
     margin-bottom: 5px;
 }
 
-.card {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: RGB(169, 214, 229);
-}
 
-.cardMedia {
-    border-radius: 2%;
-}
-
-.link {
-    text-decoration: none;
-    color: inherit;
-}
 
 
 /* Media Queries For Responsive Layout*/
