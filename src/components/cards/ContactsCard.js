@@ -25,7 +25,7 @@ export default function ContactsCard() {
                     <Typography variant="h5" component="div">
                         We Want To Hear From You!
                     </Typography>
-                    <Typography variant="body1" color="text.secondary">
+                    <Typography variant="body1" mb={4} color="text.secondary" gutterBottom>
                         <LoremIpsum p={1} />
                     </Typography>
                 </CardContent>

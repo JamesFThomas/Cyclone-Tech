@@ -23,7 +23,7 @@ export default function NewsLetterCard() {
                     <Typography variant="h5" component="div">
                         Pick Up Insider Tips To Help
                     </Typography>
-                    <Typography variant="body1" color="text.secondary">
+                    <Typography variant="body1" mb={4} color="text.secondary" gutterBottom>
                         <LoremIpsum p={1} />
                     </Typography>
                 </CardContent>

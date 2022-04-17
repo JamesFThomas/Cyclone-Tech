@@ -9,11 +9,10 @@
 .link {
     text-decoration: none;
     color: RGB(1, 42, 74);
-    /* align-self: flex-end; */
 }
 
 .cardContent {
     align-self: flex-end;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
 }

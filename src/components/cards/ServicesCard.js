@@ -24,7 +24,7 @@ export default function ServicesCard() {
                     <Typography variant="h5" component="div">
                         Let Our Team Help Yours
                     </Typography>
-                    <Typography variant="body1" color="text.secondary">
+                    <Typography variant="body1" mb={4} color="text.secondary" gutterBottom>
                         <LoremIpsum p={1} />
                     </Typography>
                 </CardContent>
