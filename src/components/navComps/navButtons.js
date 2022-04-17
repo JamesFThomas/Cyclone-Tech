@@ -10,38 +10,38 @@ export default function NavButtons() {
 
     return (
         <div className="navButtons" >
-            <ButtonGroup variant="text" aria-label="small button group" style={{ backgroundColor: "darkgray" }}>
+            <ButtonGroup variant="text" aria-label="small button group" style={{ backgroundColor: "RGB(1, 42, 74)" }}>
                 <Button >
                     <Link className='link' to='/'>
-                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' style={{ color: "white" }} variant="button" display="block" gutterBottom>
                             Home
                         </Typography>
                     </Link>
                 </Button>
                 <Button >
                     <Link className='link' to='/newsletter'>
-                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' style={{ color: "white" }} variant="button" display="block" gutterBottom>
                             Newsletter
                         </Typography>
                     </Link>
                 </Button>
                 <Button >
                     <Link className='link' to='/services'>
-                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' style={{ color: "white" }} variant="button" display="block" gutterBottom>
                             Services
                         </Typography>
                     </Link>
                 </Button>
                 <Button >
                     <Link className='link' to='/testimonials'>
-                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' style={{ color: "white" }} variant="button" display="block" gutterBottom>
                             Testimonials
                         </Typography>
                     </Link>
                 </Button>
                 <Button >
                     <Link className='link' to='/contacts'>
-                        <Typography className='navBtnText' variant="button" display="block" gutterBottom>
+                        <Typography className='navBtnText' style={{ color: "white" }} variant="button" display="block" gutterBottom>
                             Contacts
                         </Typography>
                     </Link>

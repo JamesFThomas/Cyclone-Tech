@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Typography from '@mui/material/Typography';
 
 // component imports 
 import NavBar from '../NavBar';

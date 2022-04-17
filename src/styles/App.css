@@ -1,51 +1,51 @@
-
-body{
-    background-color: RGB(190, 220, 240);
+body {
+    background-color: RGB(70, 143, 175);
 }
 
 
 .App {
     display: grid;
     height: 100vh;
+    width: 99vw;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows: 100px auto auto auto auto 100px;
     row-gap: 1em;
-    grid-template-areas: 
+    grid-template-areas:
         ". NavBar  ."
         ". NewsLetter."
         ". Services ."
         ". Tests ."
         ". Contacts ."
-        ". Footer . "; 
+        ". Footer . ";
 }
 
-.NavBar{
+.NavBar {
     grid-area: NavBar;
-    background-color: darkgray;
+    background-color: RGB(1, 42, 74);
     align-self: center;
     height: 100px;
     text-align: center;
- }
+}
 
-.NewsLetter{
+.NewsLetter {
     grid-area: NewsLetter;
 }
 
-.Services{
+.Services {
     grid-area: Services;
 }
 
-.Tests{
+.Tests {
     grid-area: Tests;
 }
 
-.Contacts{
+.Contacts {
     grid-area: Contacts;
 }
 
-.Footer{
-    grid-area: Footer; 
-    background-color: darkgray;
+.Footer {
+    grid-area: Footer;
+    background-color: RGB(70, 143, 175);
     height: 100px;
     text-align: center;
     display: flex;
@@ -55,14 +55,15 @@ body{
     margin-bottom: 5px;
 }
 
-.card{
+.card {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: RGB(169, 214, 229);
 }
 
-.cardMedia{
+.cardMedia {
     border-radius: 2%;
 }
 
@@ -78,29 +79,33 @@ body{
 
 @media (min-width: 580px) and (max-width: 799px) {
     .App {
-        grid-template-columns: 10px 1fr 1fr 10px;
+        height: 100vh;
+        width: 99vw;
+        grid-template-columns: 3px 1fr 1fr 3px;
         grid-template-rows: 100px auto auto 100px;
         column-gap: 1em;
-        grid-template-areas: 
+        column-gap: .5em;
+        grid-template-areas:
             ". NavBar NavBar ."
             ". NewsLetter Services."
             ". Tests Contacts ."
-            ". Footer Footer . "; 
+            ". Footer Footer . ";
     }
 
-  }
+}
 
 /* Desktop */
 
 @media (min-width: 800px) and (max-width: 2000px) {
     .App {
-        grid-template-columns: 5px 1fr 1fr 1fr 1fr 5px;
+
+        grid-template-columns: 3px 1fr 1fr 1fr 1fr 3px;
         grid-template-rows: 100px auto 100px;
         column-gap: .5em;
-        grid-template-areas: 
+        grid-template-areas:
             ". NavBar NavBar NavBar NavBar  ."
             ". NewsLetter Services Tests Contacts ."
-            ". Footer Footer Footer Footer . "; 
+            ". Footer Footer Footer Footer . ";
     }
 
-  }
+}

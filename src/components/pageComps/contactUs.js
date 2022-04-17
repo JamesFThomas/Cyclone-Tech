@@ -24,7 +24,7 @@ export default function ContactUs() {
     return (
         <div className='pageBody' >
             <div className='contactsBody' >
-                <Typography className='contactsTitle' mt={3} variant="h6" style={{ color: "Green" }}  >
+                <Typography className='contactsTitle' mt={3} variant="h3" style={{ color: "RGB(1, 42, 74)" }}  >
                     Contact Us
                 </Typography>
                 <figure className='contactsPhoto'>
@@ -54,8 +54,8 @@ export default function ContactUs() {
                     defaultValue="Your meesage here..."
                 />
                 < div className='contactsBtn'>
-                    <Button variant="contained" className='contactsBtn'>
-                        <Typography variant="button" color="text.secondary">
+                    <Button variant="contained" style={{ backgroundColor: "RGB(1, 42, 74)" }} className='contactsBtn'>
+                        <Typography variant="button" >
                             Send
                         </Typography>
                     </Button>

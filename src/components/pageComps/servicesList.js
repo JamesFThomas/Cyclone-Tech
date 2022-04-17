@@ -14,11 +14,11 @@ export default function ServicesList({ services }) {
     return (
         <div className='pageBody' >
             <div className='servicesBody' >
-                <Typography className='servicesTitle' mt={3} variant="h6" style={{ color: "Green" }}  >
+                <Typography className='servicesTitle' mt={3} variant="h3" style={{ color: "RGB(1, 42, 74)" }}  >
                     Services
                 </Typography>
                 {services.map(({ service, Icon, description }, i) => {
-                    return <Card className={`servicesCard servicesCard${i}`} key={i} sx={{ backgroundColor: 'RGBA(190, 220, 240, .3)' }}>
+                    return <Card className={`servicesCard servicesCard${i}`} key={i} sx={{ backgroundColor: 'RGB(169, 214, 229)' }}>
                         < Icon className='servicesIcon' sx={{ fontSize: 60 }} />
                         <Typography component="div" variant="h6">
                             {service}
