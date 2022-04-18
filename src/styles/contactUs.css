@@ -83,7 +83,7 @@
 
 /* Desktop */
 
-@media (min-width: 800px) and (max-width: 2000px) {
+@media (min-width: 800px) {
     .contactsBody {
         grid-template-columns: 20px auto auto 20px;
         grid-template-rows: 80px auto auto auto auto 1em;

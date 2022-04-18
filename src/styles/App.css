@@ -81,7 +81,7 @@ body {
 
 /* Desktop */
 
-@media (min-width: 800px) and (max-width: 2000px) {
+@media (min-width: 800px) {
     .App {
 
         grid-template-columns: 3px 1fr 1fr 1fr 1fr 3px;

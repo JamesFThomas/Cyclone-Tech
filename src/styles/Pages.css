@@ -50,7 +50,7 @@
 
 /* Desktop */
 
-@media (min-width: 800px) and (max-width: 2000px) {
+@media (min-width: 800px) {
     .pageGrid {
         display: grid;
         height: 100vh;

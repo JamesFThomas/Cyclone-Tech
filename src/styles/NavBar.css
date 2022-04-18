@@ -5,29 +5,30 @@
     grid-template-columns: 10px 1fr 1fr;
     grid-template-rows: auto;
     row-gap: 1em;
-    grid-template-areas: 
-        ". navLogo navBurger"; 
+    grid-template-areas:
+        ". navLogo navBurger";
 }
 
- /* Grid Items */
+/* Grid Items */
 
- .navLogo{
-    margin:auto;
+.navLogo {
+    margin: auto;
     grid-area: navLogo;
     justify-content: center;
     align-items: center;
- }
+}
 
- .navBurger{
-     margin: auto;
+.navBurger {
+    margin: auto;
     grid-area: navBurger;
     justify-content: center;
     align-items: center;
- }
- .navButtons{
+}
+
+.navButtons {
     grid-area: navButtons;
     display: none;
- }
+}
 
 
 /* Media Queries For Responsive Layout*/
@@ -66,29 +67,33 @@
 
 /* Desktop */
 
-@media (min-width: 800px) and (max-width: 2000px) {
+@media (min-width: 800px) {
     .navGrid {
         grid-template-columns: auto auto;
         grid-template-rows: auto;
         column-gap: 1em;
-        grid-template-areas: 
-            "navLogo navButtons"; 
+        grid-template-areas:
+            "navLogo navButtons";
     }
-    .navLogo{
+
+    .navLogo {
         grid-area: navLogo;
         align-self: center;
-     }
-     .navName{
-         font-size: 1em;
-     }
-     .navBurger{
+    }
+
+    .navName {
+        font-size: 1em;
+    }
+
+    .navBurger {
         grid-area: navBurger;
         align-self: center;
         display: none;
     }
-    .navButtons{
+
+    .navButtons {
         grid-area: navButtons;
         align-self: center;
         display: unset;
-     }
-  }
+    }
+}

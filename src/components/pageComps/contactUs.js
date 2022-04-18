@@ -36,22 +36,19 @@ export default function ContactUs() {
                     className='contactsName'
                     id="outlined-required"
                     label="Your Name"
-                    defaultValue="John Wick"
                 />
                 <TextField
                     required
                     className='contactsEmail'
                     id="outlined-required"
                     label="Your Email"
-                    defaultValue="emailAddress@provider.com"
                 />
                 <TextField
                     id="outlined-multiline-static"
                     className='contactsNote'
-                    label="Multiline"
+                    label="Your message"
                     multiline
                     rows={4}
-                    defaultValue="Your meesage here..."
                 />
                 < div className='contactsBtn'>
                     <Button variant="contained" style={{ backgroundColor: "RGB(1, 42, 74)" }} className='contactsBtn'>
