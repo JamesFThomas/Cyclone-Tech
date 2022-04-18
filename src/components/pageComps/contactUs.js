@@ -46,7 +46,7 @@ export default function ContactUs() {
                 <TextField
                     id="outlined-multiline-static"
                     className='contactsNote'
-                    label="Your message"
+                    label="Your Message *"
                     multiline
                     rows={4}
                 />
