@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 *** Website Examples ***
 
-- Live App https://cyclonetechdemo.netlify.app/
+- Live App 
+  - version 1: https://cyclonetechdemo.netlify.app/
+  - version 2: https://cyclonetechdemo2.netlify.app/ 
 
 - Home page responsive layout
 
