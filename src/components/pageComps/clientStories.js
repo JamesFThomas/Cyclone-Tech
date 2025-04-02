@@ -1,14 +1,12 @@
-// Dependency Imports 
+// Dependency Imports
 import { React, useEffect, useState, useRef } from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-import AudiotrackIcon from '@mui/icons-material/Audiotrack';
 import axios from "axios";
 
 
@@ -17,11 +15,11 @@ import '../../styles/stories.css'
 
 
 export default function ClientStories() {
-    // State variable for client card information 
+    // State variable for client card information
     const [stories, setStories] = useState([]);
 
 
-    // State & ref variables for card audio 
+    // State & ref variables for card audio
     // const [playing, setPLaying] = useState(false);
 
 
@@ -33,10 +31,10 @@ export default function ClientStories() {
     //     // prevent default action
     //     e.preventDefault();
 
-    //     // take url value from onClick & reset ref to url   
+    //     // take url value from onClick & reset ref to url
     //     url = audio;
 
-    //     // create new Audio object with card url 
+    //     // create new Audio object with card url
     //     let track = new Audio(url);
 
     //     playing.current = !playing.current;

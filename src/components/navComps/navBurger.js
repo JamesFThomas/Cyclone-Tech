@@ -6,7 +6,6 @@ import Divider from '@mui/material/Divider';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import Typography from '@mui/material/Typography';
 
 export default function NavBurger() {
     const [anchorEl, setAnchorEl] = React.useState(null);
