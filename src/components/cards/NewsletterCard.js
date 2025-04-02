@@ -6,7 +6,6 @@ import {
   CardContent,
   CardActions,
   CardMedia,
-  Grid,
   Typography,
 } from '@mui/material';
 import { LoremIpsum } from 'react-lorem-ipsum';
