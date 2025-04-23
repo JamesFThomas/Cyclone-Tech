@@ -11,50 +11,16 @@ import axios from 'axios';
 
 // Style Imports
 import '../../styles/stories.css';
+import testimonials from '../../data/testimonails';
 
 export default function ClientStories() {
   // State variable for client card information
   const [stories, setStories] = useState([]);
 
-  // State & ref variables for card audio
-  // const [playing, setPLaying] = useState(false);
-
-  // let playing = useRef(false);
-  // let url = useRef('')
-
-  // const voice = (e, audio) => {
-
-  //     // prevent default action
-  //     e.preventDefault();
-
-  //     // take url value from onClick & reset ref to url
-  //     url = audio;
-
-  //     // create new Audio object with card url
-  //     let track = new Audio(url);
-
-  //     playing.current = !playing.current;
-
-  //     // check to see if playing is true or false
-  //     if (playing.current) {
-
-  //         // if playing true call the stop function
-  //         track.pause()
-
-  //     }
-  //     else {
-  //         // if playing is false call the play function
-  //         track.play();
-  //     }
-  //     // return playing.current ? !playing.current : playing.current;
-  // }
+  // TODO: add audio functionality, use text to speech API record testimonials and then add to the data
 
   useEffect(() => {
-    axios
-      .get('https://testimonialapi.toolcarton.com/api')
-      .then((clientInfo) => {
-        setStories(clientInfo.data);
-      });
+    setStories(testimonials);
   }, []);
 
   return (
