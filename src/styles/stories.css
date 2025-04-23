@@ -1,95 +1,94 @@
 .clientBody {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    grid-template-columns: 20px auto 20px;
-    grid-template-rows: auto;
-    row-gap: .75em;
-    grid-template-areas:
-        ". clientTitle ."
-        ". clientCard0 ."
-        ". clientCard1 ."
-        ". clientCard2 ."
-        ". clientCard3 ."
-        ". clientCard4 ."
-        ". clientCard5 ."
-        ". clientCard6 ."
-        ". clientCard7 ."
-        ". clientCard8."
-        ". clientCard9 .";
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  grid-template-columns: 20px auto 20px;
+  grid-template-rows: auto;
+  row-gap: 0.75em;
+  grid-template-areas:
+    '. clientTitle .'
+    '. clientCard0 .'
+    '. clientCard1 .'
+    '. clientCard2 .'
+    '. clientCard3 .'
+    '. clientCard4 .'
+    '. clientCard5 .'
+    '. clientCard6 .'
+    '. clientCard7 .'
+    '. clientCard8.'
+    '. clientCard9 .';
 }
 
-
 .clientTitle {
-    grid-area: clientTitle;
-    align-self: center;
-    text-align: center;
+  grid-area: clientTitle;
+  align-self: center;
+  text-align: center;
 }
 
 .clientImage {
-    padding: 5px;
+  padding: 5px;
 }
 
 .clientCard0 {
-    grid-area: clientCard0;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard0;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard1 {
-    grid-area: clientCard1;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard1;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard2 {
-    grid-area: clientCard2;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard2;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard3 {
-    grid-area: clientCard3;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard3;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard4 {
-    grid-area: clientCard4;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard4;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard5 {
-    grid-area: clientCard5;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard5;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard6 {
-    grid-area: clientCard6;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard6;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard7 {
-    grid-area: clientCard7;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard7;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard8 {
-    grid-area: clientCard8;
-    align-self: center;
-    text-align: center;
+  grid-area: clientCard8;
+  align-self: center;
+  text-align: center;
 }
 
 .clientCard9 {
-    grid-area: clientCard9;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 1em;
+  grid-area: clientCard9;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 /* Media Queries For Responsive Layout*/
@@ -97,67 +96,65 @@
 /* Tablet */
 
 @media (min-width: 580px) and (max-width: 950px) {
-    .clientBody {
-        grid-template-columns: 10px auto auto auto 10px;
-        grid-template-rows: auto;
-        column-gap: .75em;
-        row-gap: .75em;
-        grid-template-areas:
-            ". clientTitle clientTitle clientTitle ."
-            ". clientCard0  clientCard1 clientCard2."
-            ". clientCard3 clientCard4 clientCard5 ."
-            ". clientCard6 clientCard7 clientCard8 ."
-            ".  . clientCard9 . .";
-    }
+  .clientBody {
+    grid-template-columns: 10px auto auto auto 10px;
+    grid-template-rows: auto;
+    column-gap: 0.75em;
+    row-gap: 0.75em;
+    grid-template-areas:
+      '. clientTitle clientTitle clientTitle .'
+      '. clientCard0  clientCard1 clientCard2.'
+      '. clientCard3 clientCard4 clientCard5 .'
+      '. clientCard6 clientCard7 clientCard8 .'
+      '.  . clientCard9 . .';
+  }
 
-    .clientImage {
-        height: 3em;
-        width: 3em;
-    }
+  .clientImage {
+    height: 3em;
+    width: 3em;
+  }
 
-    .clientCard {
-        height: 100%;
-    }
-
+  .clientCard {
+    height: 100%;
+  }
 }
 
 /* Desktop */
 
 @media (min-width: 951px) {
-    .clientBody {
-        grid-template-columns: 10px auto auto auto auto auto 10px;
-        grid-template-rows: auto;
-        column-gap: .75em;
-        row-gap: .75em;
-        grid-template-areas:
-            ". clientTitle clientTitle clientTitle clientTitle clientTitle ."
-            ". clientCard0  clientCard1 clientCard2 clientCard3 clientCard4 ."
-            ". clientCard5 clientCard6 clientCard7 clientCard8 clientCard9 .";
-    }
+  .clientBody {
+    grid-template-columns: 10px auto auto auto auto auto 10px;
+    grid-template-rows: auto;
+    column-gap: 0.75em;
+    row-gap: 0.75em;
+    grid-template-areas:
+      '. clientTitle clientTitle clientTitle clientTitle clientTitle .'
+      '. clientCard0  clientCard1 clientCard2 clientCard3 clientCard4 .'
+      '. clientCard5 clientCard6 clientCard7 clientCard8 clientCard9 .';
+  }
 
-    .clientImage {
-        height: 5em;
-        width: 5em;
-    }
+  .clientImage {
+    height: 5em;
+    width: 5em;
+  }
 
-    .clientCard {
-        height: 100%;
-    }
+  .clientCard {
+    height: 100%;
+  }
 
-    .clientCard5 {
-        margin-bottom: 1em;
-    }
+  .clientCard5 {
+    margin-bottom: 1em;
+  }
 
-    .clientCard6 {
-        margin-bottom: 1em;
-    }
+  .clientCard6 {
+    margin-bottom: 1em;
+  }
 
-    .clientCard7 {
-        margin-bottom: 1em;
-    }
+  .clientCard7 {
+    margin-bottom: 1em;
+  }
 
-    .clientCard8 {
-        margin-bottom: 1em;
-    }
-
+  .clientCard8 {
+    margin-bottom: 1em;
+  }
 }

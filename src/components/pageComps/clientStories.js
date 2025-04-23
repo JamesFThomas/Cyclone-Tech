@@ -28,7 +28,7 @@ export default function ClientStories() {
       <div className='clientBody'>
         <Typography
           className='clientTitle'
-          mt={3}
+          mt={1}
           variant='h3'
           style={{ color: 'RGB(1, 42, 74)' }}
         >
