@@ -7,7 +7,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-import axios from 'axios';
 
 // Style Imports
 import '../../styles/stories.css';
